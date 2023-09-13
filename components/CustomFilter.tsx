@@ -16,6 +16,8 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
   const handleUpdateParams = (e: { title: string; value: string }) => {
     const newPathName = updateSearchParams(title, e.value.toLowerCase());
 
+    console.log(newPathName);
+
     router.push(newPathName);
   };
 
@@ -24,8 +26,8 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
       <Listbox
         value={selected}
         onChange={(e) => {
-          setSelected(e); // Update the selected option in state
-          handleUpdateParams(e); // Update the URL search parameters and navigate to the new URL
+          setSelected(e);
+          handleUpdateParams(e);
         }}
       >
         <div className='relative w-fit z-10'>
