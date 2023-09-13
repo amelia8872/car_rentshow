@@ -84,3 +84,18 @@ export const yearsOfProduction = [
   { title: "2022", value: "2022" },
   { title: "2023", value: "2023" },
 ];
+
+export const fuels = [
+  {
+    title: "Fuel",
+    value: "",
+  },
+  {
+    title: "Gas",
+    value: "Gas",
+  },
+  {
+    title: "Electricity",
+    value: "Electricity",
+  },
+];
